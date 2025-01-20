@@ -1,4 +1,6 @@
-# Business Analysis Report on Supermarket Transaction Data
+<h1 align="center">TASK 1</h1>
+
+## Business Analysis Report on Supermarket Transaction Data
 
 ## Executive Summary
 The transaction data analysis of the supermarket has been carried out in this report based on two years of data. The goal was to purify, transmute, and methodologically dissect the data to reach usable commercial knowledge to support decisions in marketing TCO and improve effectiveness. Various methods of data analysis, such as machine learning, were applied to explore patterns and relationships between sales, promotions, and customers’ buying habits.
