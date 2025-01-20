@@ -85,3 +85,62 @@ The analysis utilized four key datasets:
 ## Future Work
 - Explore advanced machine learning algorithms, such as neural networks, for deeper predictive insights.
 - Consider real-time data integration for dynamic pricing and inventory management.
+
+<h1 align="center">TASK 02</h1>
+
+# Comprehensive Analysis Report
+
+## Executive Summary
+This report provides a detailed investigation and discussion of two distinct projects solved using state-of-the-art machine learning methods. These projects target real-life business issues and the improvements made in business operations. The first project applies supervised learning to predict sales outcomes and assess promotional impacts in specific supermarket deals. The second project explores the feasibility of using reinforcement learning to solve challenging maze navigation problems, which serves as a stand-in for strategic planning and improvement challenges in specific environments. These projects demonstrate how data-driven methods and rationality can significantly impact business ventures and their underlying strategies.
+
+## Task Overview
+
+### Supervised Learning Task:
+- **Objective**: The objective is to create a prognostic model to predict sales volumes and assess the impact of promotions. The analysis involves working with big data and turning the findings into actionable recommendations for improving marketing and sales strategies.
+
+### Maze Navigation Task:
+- **Objective**: To resolve tactical thinking and pathfinding issues by designing an intelligent system that employs reinforcement learning to navigate through a maze.
+
+## Data Cleaning & Transformation
+
+### Supervised Learning Model:
+- **Cleaning Process**: The data was pre-processed with careful handling of missing values and other inconsistencies. Missing attribute values were imputed, and nominal data was categorized to ensure data utility.
+- **Transformation Process**: The data was scaled to a normal scale equivalent, and qualitative data was converted into N+1 categories to ensure compatibility with machine learning algorithms.
+
+### Maze Navigation Model:
+- **Preprocessing**: The maze data was transformed into a grid format, where `1` represented barriers and `0` represented open paths, making it understandable for the learning algorithm.
+
+## Supervised Learning Model
+
+- **Problem Definition**: The goal was to identify the relationship between promotional variables and sales volume responses in multiple supermarkets. Additionally, sales cycle patterns were to be identified to predict peak sales periods.
+
+- **Model Explanation**:
+  - **Chosen Model**: The `RandomForestRegressor` was selected due to its versatility with different datasets and its ability to model non-linear problems with minimal parameter adjustments.
+  - **Features Used**: Promotional flags like day of the week and repeat sales from prior promotions were chosen to assess their influence on purchase decisions.
+  - **Training Process**: The model was trained using cross-validation to minimize overfitting, dividing the dataset into K parts and testing on each part.
+  - **Evaluation of Metrics**: The model's performance was evaluated using Mean Squared Error (MSE) and R-Squared scores, which showed improvements over basic models.
+  
+- **Insights**: The model revealed key insights into the effectiveness of various promotional campaigns and their impact on sales, depending on the store’s location and type.
+
+### Business Insights:
+- The model helped identify the most effective promotions and the timing for their execution, aiding in stock management, promotional strategy development, and better overall business strategy formulation.
+
+## Maze Model Design
+
+- **Model Explanation**: The maze navigation model used Q-learning, a reinforcement learning technique well-suited for problems with clearly defined state and action spaces.
+  
+- **Reinforcement Learning Approach**: 
+  - **Approach Details**: Both A3C and Q-learning were utilized, with rewards defined for reaching the goal, hitting obstacles, or normal movement. The exploration vs exploitation trade-off was a critical factor.
+  
+- **Training Results**: The model demonstrated strong learning, solving the maze in fewer attempts over successive episodes and with fewer trials.
+  
+- **Performance Analysis**: Analyzing the Q-table showed how the agent improved its pathfinding strategy by avoiding obstacles and reducing the path length to the goal.
+
+## Challenges and Lessons Learned
+- Several challenges were faced, such as handling high-dimensional data in the supervised learning model and tuning hyperparameters in the reinforcement learning model. The projects led to key discoveries about data quality and the effectiveness of reinforcement learning in solving complex spatial problems.
+
+## Conclusion
+The projects demonstrated that machine learning methods are feasible and useful for solving business problems. Predictive modeling proved well-suited for business environments, and AI can be effectively applied in strategic decision-making situations.
+
+
+
